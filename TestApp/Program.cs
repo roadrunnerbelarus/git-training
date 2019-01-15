@@ -11,7 +11,7 @@ namespace TestApp
 
             var futureDay = DateCalculator.AddFromToday(i);
 
-            Console.WriteLine($"In {i} days from today there will be \n{futureDay.Day} {futureDay.ToString("MMM")} {futureDay.Year}");
+            Console.WriteLine($"In {i} days from today there will be \n{futureDay.Day} {futureDay.ToString("MMM")} {futureDay.Year} {futureDay.DayOfWeek}");
             Console.ReadKey();
         }
     }
