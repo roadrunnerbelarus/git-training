@@ -8,10 +8,10 @@ namespace TestApp
         {
             Console.WriteLine("Enter the number of days: ");
 
-            var i = Int32.Parse(Console.ReadLine());
-            var futureDay = DateCalculator.AddFromToday(i);
+            var input = Console.ReadLine();
+            var futureDay = DateCalculator.AddFromToday(input);
 
-            Console.WriteLine($"In {i} days from today there will be \n{futureDay.Day} {futureDay.ToString("MMM")} {futureDay.Year} {futureDay.DayOfWeek}");
+            Console.WriteLine($"In {input} days from today there will be \n{futureDay.Day} {futureDay.ToString("MMM")} {futureDay.Year} {futureDay.DayOfWeek}");
             Console.ReadKey();
         }
     }
